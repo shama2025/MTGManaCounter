@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainActivityLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/whiteManaCardView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardBackgroundColor="#F8E7B9"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:id="@+id/whitMana"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <Button
+                    android:id="@+id/minus_10_whiteMana_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="-10" />
+
+                <Button
+                    android:id="@+id/minus_5_whiteMana_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="-5" />
+
+                <Button
+                    android:id="@+id/minus_1_whiteMana_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="-1" />
+
+                <TextView
+                    android:id="@+id/whitemanarunsum"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/plus_1_whiteMana_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="+1" />
+
+                <Button
+                    android:id="@+id/plus_5_whiteMana_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="+5" />
+
+                <Button
+                    android:id="@+id/plus_10_whiteMana_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="+10" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/blueManaCardView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="#A5C7F2"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/minus_10_blue_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="-10"
+                    android:textColor="#003366" />
+
+                <Button
+                    android:id="@+id/minus_5_blue_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="-5"
+                    android:textColor="#003366" />
+
+                <Button
+                    android:id="@+id/minus_1_blue_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="-1"
+                    android:textColor="#003366" />
+
+                <TextView
+                    android:id="@+id/bluemana_sum"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#003366"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/plus_1_blue_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="+1"
+                    android:textColor="#003366" />
+
+                <Button
+                    android:id="@+id/plus_5_blue_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="+5"
+                    android:textColor="#003366" />
+
+                <Button
+                    android:id="@+id/plus_10_blue_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="+10"
+                    android:textColor="#003366" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Black Mana Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/blackManaCardView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="#B8A9C8"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/minus_10_black_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="-10"
+                    android:textColor="#3B2F2F" />
+
+                <Button
+                    android:id="@+id/minus_5_black_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="-5"
+                    android:textColor="#3B2F2F" />
+
+                <Button
+                    android:id="@+id/minus_1_black_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="-1"
+                    android:textColor="#3B2F2F" />
+
+                <TextView
+                    android:id="@+id/blackmana_sum"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#3B2F2F"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/plus_1_black_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="+1"
+                    android:textColor="#3B2F2F" />
+
+                <Button
+                    android:id="@+id/plus_5_black_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="+5"
+                    android:textColor="#3B2F2F" />
+
+                <Button
+                    android:id="@+id/plus_10_black_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="+10"
+                    android:textColor="#3B2F2F" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Red Mana Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/redManaCardView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="#F1A07B"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/minus_10_red_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="-10"
+                    android:textColor="#8B2E00" />
+
+                <Button
+                    android:id="@+id/minus_5_red_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="-5"
+                    android:textColor="#8B2E00" />
+
+                <Button
+                    android:id="@+id/minus_1_red_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="-1"
+                    android:textColor="#8B2E00" />
+
+                <TextView
+                    android:id="@+id/redmana_sum"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#8B2E00"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/plus_1_red_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="+1"
+                    android:textColor="#8B2E00" />
+
+                <Button
+                    android:id="@+id/plus_5_red_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="+5"
+                    android:textColor="#8B2E00" />
+
+                <Button
+                    android:id="@+id/plus_10_red_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="+10"
+                    android:textColor="#8B2E00" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/greenManaCardView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardBackgroundColor="#A8C686"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/minus_10_green_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="-10"
+                    android:textColor="#2F4F2F" />
+
+                <Button
+                    android:id="@+id/minus_5_green_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="-5"
+                    android:textColor="#2F4F2F" />
+
+                <Button
+                    android:id="@+id/minus_1_green_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="-1"
+                    android:textColor="#2F4F2F" />
+
+                <TextView
+                    android:id="@+id/greenmana_sum"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#2F4F2F"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/plus_1_green_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="+1"
+                    android:textColor="#2F4F2F" />
+
+                <Button
+                    android:id="@+id/plus_5_green_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="+5"
+                    android:textColor="#2F4F2F" />
+
+                <Button
+                    android:id="@+id/plus_10_green_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="+10"
+                    android:textColor="#2F4F2F" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/colorlessManaCardView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="#BDBDBD"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/minus_10_colorless_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="-10"
+                    android:textColor="#616161" />
+
+                <Button
+                    android:id="@+id/minus_5_colorless_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="-5"
+                    android:textColor="#616161" />
+
+                <Button
+                    android:id="@+id/minus_1_colorless_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="-1"
+                    android:textColor="#616161" />
+
+                <TextView
+                    android:id="@+id/colorlessmana_sum"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#616161"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/plus_1_colorless_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="+1"
+                    android:textColor="#616161" />
+
+                <Button
+                    android:id="@+id/plus_5_colorless_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="+5"
+                    android:textColor="#616161" />
+
+                <Button
+                    android:id="@+id/plus_10_colorless_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="+10"
+                    android:textColor="#616161" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/utilCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="8dp">
+
+                    <Button
+                        android:id="@+id/doubleManaButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="58dp"
+                        android:layout_weight="1"
+                        android:text="2x"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/zeroManaButton"
+                        android:layout_width="0dp"
+                        android:layout_height="58dp"
+                        android:layout_weight="2"
+                        android:text="0"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
