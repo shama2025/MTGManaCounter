@@ -5,6 +5,9 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
+import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.WindowInsetsControllerCompat
 
 class MainActivity : ComponentActivity() {
 
@@ -174,6 +177,9 @@ class MainActivity : ComponentActivity() {
             greenManaRunSum.text = "0"
             colorlessManaRunSum.text = "0"
         }
+
+        // Hide System bar on load
+        hideSystemBar(this)
     }
 
 // Utility Functions
@@ -186,6 +192,15 @@ class MainActivity : ComponentActivity() {
         if (result >= 0) {
             mana.text = "$result"
         }
+    }
+
+    // Hides the system bar
+    private fun hideSystemBar(activity: MainActivity){
+        val window = activity.window
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+        val controller = WindowInsetsControllerCompat(window, window.decorView)
+        controller.hide(WindowInsetsCompat.Type.systemBars())
+        controller.systemBarsBehavior = WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
     }
 }
 
